@@ -28,6 +28,10 @@ def _register_blueprints(app: Flask):
     def ping():
         return "pong"
 
+    @app.route("/helath")
+    def health():
+        return "ok"
+
 
 def _register_error_handlers(app: Flask):
     @app.errorhandler(ValidationError)
