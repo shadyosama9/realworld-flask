@@ -28,7 +28,7 @@ def _register_blueprints(app: Flask):
     def ping():
         return "pong"
 
-    @app.route("/helath")
+    @app.route("/health")
     def health():
         return "ok"
 
