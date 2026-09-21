@@ -13,6 +13,8 @@ COPY poetry.lock pyproject.toml README.md /app/
 
 WORKDIR /app
 
+COPY alembic.ini /app/
+COPY alembic /app/alembic
 COPY realworld /app/realworld
 
 RUN poetry config virtualenvs.create false \
