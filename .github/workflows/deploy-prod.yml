@@ -12,3 +12,7 @@ jobs:
     uses: ./.github/workflows/deploy.yml
     with:
       environment: production
+      ecs_task_definition_family: shady-osama-ecs-task
+      ecs_container_name: backend
+      ecs_cluster: shady-osama-ecs-cluster
+      ecs_service: shady-osama-ecs-service
